@@ -1,6 +1,6 @@
 import type { ProfileMenu } from '../Types/generalTypes'
 
-import manageAccountIcon from '../Assets/Icons/user.svg'
+import manageAccountIcon from '../assets/icons/user.svg'
 
 export const profileMenu: ProfileMenu[] = [
   {
