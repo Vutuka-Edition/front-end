@@ -4,9 +4,8 @@ import LanguageDetector from 'i18next-browser-languagedetector';
 import authService from '../Services/authServices'
 import { store } from '../Redux/store'
 
-import englishTranslation from './Languages/English.json'
-import frenchTranslation from './Languages/French.json'
-import swahiliTranslation from './Languages/Swahili.json'
+import englishTranslation from './Languages/english.json'
+import frenchTranslation from './Languages/french.json'
 
 const resources = {
   english: {
@@ -14,9 +13,6 @@ const resources = {
   },
   french: {
     translation: frenchTranslation,
-  },
-  german: {
-    translation: swahiliTranslation,
   },
 }
 

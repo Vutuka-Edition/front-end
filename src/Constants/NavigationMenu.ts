@@ -14,32 +14,22 @@ export const profileMenu: ProfileMenu[] = [
 export const navigationItems = [
     {
         id: 1,
-        title: 'Home',
-        link: 'home',
-    },
-    {
-        id: 2,
         title: 'About',
         link: 'about',
     },
     {
+        id: 2,
+        title: 'Books',
+        link: 'books',
+    },
+    {
         id: 3,
-        title: 'Testimonials',
-        link: 'testimonials',
+        title: 'Blog',
+        link: 'blog',
     },
     {
         id: 4,
-        title: 'Products',
-        link: 'products',
-    },
-    {
-        id: 5,
-        title: 'Channels',
-        link: 'channels',
-    },
-    {
-        id: 6,
-        title: 'How It Works',
-        link: 'how-it-works',
+        title: 'Contact',
+        link: 'contact',
     },
 ]
