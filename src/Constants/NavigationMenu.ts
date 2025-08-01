@@ -1,0 +1,35 @@
+import type { ProfileMenu } from '../Types/generalTypes'
+
+import manageAccountIcon from '../Assets/Icons/user.svg'
+
+export const profileMenu: ProfileMenu[] = [
+  {
+    id: 1,
+    name: 'Manage Account',
+    link: '/dashboard/manage-account',
+    icon: manageAccountIcon,
+  },
+]
+
+export const navigationItems = [
+    {
+        id: 1,
+        title: 'About',
+        link: 'about',
+    },
+    {
+        id: 2,
+        title: 'Books',
+        link: 'books',
+    },
+    {
+        id: 3,
+        title: 'Blog',
+        link: 'blog',
+    },
+    {
+        id: 4,
+        title: 'Contact',
+        link: 'contact',
+    },
+]
