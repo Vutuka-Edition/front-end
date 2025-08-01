@@ -31,3 +31,21 @@ export interface CurrentUserState {
   error: NotificationTypes
   otpIsEnabled: boolean
 }
+
+export interface LanguageMenu {
+  id: number
+  image?: string
+  content: string
+  title: string
+}
+
+export interface ProfileMenu {
+  id: number
+  name: string
+  link: string
+  icon: string
+}
+
+export interface RootState {
+  currentUser: CurrentUserState
+}
