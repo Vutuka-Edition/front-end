@@ -74,7 +74,7 @@ const NavBar: FC<NavBarProps> = ({ isScrolled }) => {
   }
 
   return (
-    <div
+    <header
       className={`fixed top-0 left-0 right-0 w-full py-4 z-50 ${
         isScrolled ? 'bg-white shadow-xl' : 'bg-transparent'
       }`}
@@ -163,7 +163,7 @@ const NavBar: FC<NavBarProps> = ({ isScrolled }) => {
           </div>
         )}
       </div>
-    </div>
+    </header>
   )
 }
 
