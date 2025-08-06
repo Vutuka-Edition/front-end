@@ -4,5 +4,8 @@
   "get-started": "Commencer",
   "buy-books": "Acheter des livres",
   "login": "Connexion",
-  "register": "S'inscrire"
+  "register": "S'inscrire",
+  "HowItWorks-title": "Comment ça marche",
+  "HowItWorks-description": "Découvrez les processus qui rendent notre plateforme unique et conviviale, conçue pour vous connecter avec le meilleur de la littérature africaine.",
+  "HowItWorks-button-description": "Découvrez comment notre plateforme fonctionne et comment vous pouvez en bénéficier."
 }

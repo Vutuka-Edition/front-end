@@ -1,12 +1,12 @@
 import type { FC } from 'react'
 
 import Hero from './Hero'
+import HowItWorks from './HowItWorks'
+
 import heroImg from '../../assets/images/Hero.png'
 import herobg from '../../assets/images/Hero-bg.png'
 
 const Home: FC = () => {
-
-
   return (
     <main className="relative bg-[#F2F0F0]">
       <div id='home' className="h-[70vh] lg:h-[100vh] flex items-center justify-between">
@@ -22,7 +22,8 @@ const Home: FC = () => {
           </div>
         </div>
       </div>
-
+      <HowItWorks />
+      <div className="h-[100vh] lg:h-[70vh]"></div>
     </main>
   )
 }

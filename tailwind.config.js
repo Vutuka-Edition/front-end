@@ -25,6 +25,7 @@ export default {
         'white-extended':'#F8F8F8',
         'white-new':'#F8F8FF',
         'green-new':'#008000',
+        'green-new-hover':'#D7F4D2',
       }),
       rotate: {
         '60': '60deg',
