@@ -2,6 +2,7 @@ import type { FC } from 'react'
 
 import Hero from './Hero'
 import HowItWorks from './HowItWorks'
+import Impact from './Impact'
 
 import heroImg from '../../assets/images/Hero.png'
 import herobg from '../../assets/images/Hero-bg.png'
@@ -23,7 +24,7 @@ const Home: FC = () => {
         </div>
       </div>
       <HowItWorks />
-      <div className="h-[100vh] lg:h-[70vh]"></div>
+      <Impact />
     </main>
   )
 }
