@@ -2,6 +2,7 @@ import type { FC } from 'react'
 
 import Hero from './Hero'
 import Partners from './Partners'
+import About from './About'
 import HowItWorks from './HowItWorks'
 import Impact from './Impact'
 import FAQ from './FAQ'
@@ -26,6 +27,7 @@ const Home: FC = () => {
         </div>
       </div>
       <Partners />
+      <About />
       <HowItWorks />
       <Impact />
       <section className="px-4 md:px-14 lg:px-20 pb-24">

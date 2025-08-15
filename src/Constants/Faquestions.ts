@@ -7,50 +7,44 @@ interface FAQuestion {
 export const faquestions: FAQuestion[] = [
     {
         id: 1,
-        question: "How is HireMeAfrika different from other recruitment platforms?",
-        answer: "We are committed to ethical and sustainable practices, promoting fair hiring and diversity in " +
-            "the workplace. We also offer a unique combination of advanced search tools, skill assessments, and a " +
-            "supportive community environment to empower both talents and employers."
+        question: "What makes Vutuka Edition different from other publishers and libraries?",
+        answer:
+            "We are committed to preserving culture, promoting diverse voices, and making literature accessible to everyone. " +
+            "Our unique blend of book publishing, a curated digital library, and community reading initiatives sets us apart from traditional publishers."
     },
     {
         id: 2,
-        question: "Is there a fee to use HireMeAfrika?",
-        answer: "For Talents, Creating a profile and searching for jobs on Hire Me Afrika is completely free! " +
-            "We believe everyone deserves access to equal opportunities, regardless of financial background.\n" +
-            "\n" +
-            "For Employers, we offer flexible pricing plans tailored to your business needs. Contact our " +
-            "sales team for a personalized quote."
+        question: "Do I need to pay to access the Vutuka Edition library?",
+        answer:
+            "Browsing our digital catalog is free for everyone. Many of our community and classic titles are available at no cost. " +
+            "For premium and newly released works, we offer affordable subscription plans to support authors and keep our collection growing."
     },
     {
         id: 3,
-        question: "Is my information safe on HireMeAfrika?",
-        answer: "We take data security very seriously. We use industry-standard security measures " +
-            "to protect your information, including encryption and secure servers. You can learn more about our " +
-            "data privacy policy on our website."
+        question: "Is my personal information safe with Vutuka Edition?",
+        answer:
+            "Yes. We take data privacy very seriously. All user accounts and transactions are protected using industry-standard encryption " +
+            "and secure servers. You can read our full privacy policy on our website for more details."
     },
     {
         id: 4,
-        question: "How can I improve my chances of getting noticed by employers on HireMeAfrika?",
-        answer: "Create a detailed and compelling profile that showcases your skills and experience.\n" +
-            "\n" +
-            " Complete relevant skill assessments to validate your expertise.\n" +
-            "\n" +
-            " Keep your profile active and updated with your latest work and achievements.\n" +
-            "\n" +
-            " Network with other professionals and participate in online communities on the platform."
+        question: "How can I get my book published through Vutuka Edition?",
+        answer:
+            "Submit your manuscript through our online submission portal with a brief synopsis and author profile. " +
+            "Our editorial team will review your work and contact you with feedback and publishing opportunities."
     },
     {
         id: 5,
-        question: "Can I use HireMeAfrika to hire remote workers from other countries?",
-        answer: "Yes! Hire Me Afrika connects talents and employers across Africa and beyond. You can easily search " +
-            "for candidates based on their location, skills, and experience. We also offer tools and resources to help " +
-            "you navigate legal and administrative aspects of remote hiring."
+        question: "Can I access the library from outside of my country?",
+        answer:
+            "Absolutely. Our digital library is accessible worldwide. You can browse, purchase, or borrow e-books no matter where you are, " +
+            "as long as you have an internet connection."
     },
     {
         id: 6,
-        question: "I’m a small business. Can I use HireMeAfrika to help me find the right talent?",
-        answer: "Absolutely! We understand the challenges small businesses face when it comes to recruitment. " +
-            "We offer affordable plans and features designed to meet your specific needs and help you find " +
-            "the perfect fit for your team."
+        question: "I’m a school or community organization. Can I partner with Vutuka Edition?",
+        answer:
+            "Yes! We regularly collaborate with schools, libraries, and community groups to promote reading. " +
+            "We offer bulk book discounts, literacy program support, and customized reading packages for your audience."
     }
 ];
