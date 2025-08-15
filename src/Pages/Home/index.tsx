@@ -1,16 +1,18 @@
 import type { FC } from 'react'
 
 import Hero from './Hero'
+import Partners from './Partners'
 import HowItWorks from './HowItWorks'
 import Impact from './Impact'
+import FAQ from './FAQ'
 
 import heroImg from '../../assets/images/Hero.png'
 import herobg from '../../assets/images/Hero-bg.png'
 
 const Home: FC = () => {
   return (
-    <main className="relative bg-[#F2F0F0]">
-      <div id='home' className="h-[70vh] lg:h-[100vh] flex items-center justify-between">
+    <main className="relative bg-white-extended">
+      <div id='home' className="h-[70vh] lg:h-[85vh] flex items-center justify-between">
         <Hero />
         <div className="hidden lg:block flex-1 relative h-full">
           <img src={herobg} alt="hero-bg" className="h-full object-cover" />
@@ -23,8 +25,17 @@ const Home: FC = () => {
           </div>
         </div>
       </div>
+      <Partners />
       <HowItWorks />
       <Impact />
+      <section className="px-4 md:px-14 lg:px-20 pb-24">
+        <div className="px-4 md:px-14 lg:px-20 py-16 md:mx-[9rem] flex flex-col space-y-10 md:space-y-14 bg-[#F2F0F0] rounded-xl">
+          <h1 className="text-2xl md:text-3xl text-black font-bold text-center">
+              Frequently Asked Questions
+          </h1>
+          <FAQ />
+        </div>
+      </section>
     </main>
   )
 }
