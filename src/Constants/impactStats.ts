@@ -6,29 +6,30 @@ interface ImpactStat {
   description: string;
   bgColor: string;
 }
+
 export const impactStats: ImpactStat[] = [
   {
     id: 1,
-    title: 'Enfants aidés',
-    value: 1500,
+    title: 'Livres publiés',
+    value: 120,
     curentValue: '+',
-    description: 'Nombre d&apos;enfants ayant bénéficié de notre soutien depuis notre création.',
+    description: 'Nombre total de livres publiés par Vutuka Edition depuis notre lancement.',
     bgColor: 'bg-success-50',
   },
   {
     id: 2,
-    title: 'Bénévoles actifs',
-    value: 30,
+    title: 'Auteurs partenaires',
+    value: 45,
     curentValue: '+',
-    description: 'Nombre de bénévoles engagés dans nos programmes et activités.',
+    description: 'Auteurs ayant collaboré avec nous pour éditer et distribuer leurs ouvrages.',
     bgColor: 'bg-primary-50',
   },
   {
     id: 3,
-    title: 'Projets réalisés',
-    value: 20,
+    title: 'Lecteurs fidèles',
+    value: 5000,
     curentValue: '+',
-    description: 'Nombre de projets mis en place pour améliorer la vie des enfants et des familles.',
+    description: 'Membres de notre communauté de lecteurs à travers le monde.',
     bgColor: 'bg-accent-50',
   },
 ];

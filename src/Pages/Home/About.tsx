@@ -5,7 +5,7 @@ import readerImg from '../../assets/images/reader.jpg'
 
 const About: React.FC = () => {
   return (
-    <section className="py-16 lg:py-32 px-4 lg:px-20">
+    <section className="bg-white py-16 lg:py-32 px-4 lg:px-20">
       <div className="max-w-[80vw] mx-auto grid lg:grid-cols-2 gap-16 items-center">
         <div className="relative">
           <img

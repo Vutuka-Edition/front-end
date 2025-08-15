@@ -1,4 +1,4 @@
-import { BadgeDollarSign, Users, HeartHandshake } from 'lucide-react';
+import { BadgeDollarSign, Send, Users, HeartHandshake } from 'lucide-react';
 
 import applePay from '../assets/images/apple-pay.png';
 import googlePay from '../assets/images/google-pay.png';
@@ -22,16 +22,16 @@ export const processes: Process[] = [
   {
     id: 1,
     icon: Users,
-    title: 'Create Account',
-    description: 'Sign up to get started with our secure platform.',
+    title: 'Create Your Account',
+    description: 'Sign up quickly to access Vutuka Edition’s library, submit manuscripts, or join our reading community. Create your profile and start exploring today.',
     images: [profile1, profile2, profile3],
     text: 'Get Started'
   },
-    {
+  {
     id: 2,
-    icon: HeartHandshake,
-    title: 'Submit your Text',
-    description: 'Share your thoughts and ideas with our authors and get correction.',
+    icon: Send,
+    title: 'Submit Your Manuscript',
+    description: 'Share your manuscript or text with our editorial team. Collaborate and receive constructive feedback to refine your work before publication.',
     tagline: ['Share', 'Collaborate', 'Improve'],
     text: 'Submit Text'
   },
@@ -39,14 +39,14 @@ export const processes: Process[] = [
     id: 3,
     icon: HeartHandshake,
     title: 'Get Published',
-    description: 'Your work will be published and shared with the community.',
+    description: 'Once your work is polished, Vutuka Edition will publish it and make it available to our global community of readers. Inspire others with your stories and ideas.',
     tagline: ['Publish', 'Share', 'Inspire'],
   },
-    {
+  {
     id: 4,
     icon: BadgeDollarSign,
-    title: 'Earn Money',
-    description: 'Earn money by sharing your work with the community.',
+    title: 'Earn from Your Work',
+    description: 'Monetize your creativity! Receive payments when readers purchase your books or access premium content. Flexible payment options make it simple to get paid securely.',
     images: [applePay, googlePay, paypal, mastercard],
     text: 'Payment Options'
   },

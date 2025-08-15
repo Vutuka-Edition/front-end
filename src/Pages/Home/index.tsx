@@ -3,8 +3,11 @@ import type { FC } from 'react'
 import Hero from './Hero'
 import Partners from './Partners'
 import About from './About'
+import FeaturedBooks from './FeaturedBooks'
+import Testimonials from './Testimonials'
 import HowItWorks from './HowItWorks'
 import Impact from './Impact'
+import BestSeller from './BestSeller'
 import FAQ from './FAQ'
 
 import heroImg from '../../assets/images/Hero.png'
@@ -28,7 +31,10 @@ const Home: FC = () => {
       </div>
       <Partners />
       <About />
+      <FeaturedBooks />
+      <Testimonials />
       <HowItWorks />
+      <BestSeller />
       <Impact />
       <section className="px-4 md:px-14 lg:px-20 pb-24">
         <div className="px-4 md:px-14 lg:px-20 py-16 md:mx-[9rem] flex flex-col space-y-10 md:space-y-14 bg-[#F2F0F0] rounded-xl">
