@@ -1,17 +1,20 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 
+import aboutItems from '../../Constants/AboutItems';
 import booksImg from '../../assets/images/books.jpg';
 import readerImg from '../../assets/images/reader.jpg';
 
 const About: React.FC = () => {
+  const { t } = useTranslation();
   return (
-    <section className="bg-white py-16 lg:py-32 px-4 lg:px-20">
-      <div className="max-w-[80vw] mx-auto grid lg:grid-cols-2 gap-16 items-center">
-        <div className="relative">
+    <section className="bg-white py-16 lg:py-32 px-4 md:px-20">
+      <div className="flex flex-col lg:flex-row items-center justify-between gap-12">
+        <div className="lg:hidden 2xl:flex flex-1 relative w-[90%]">
           <img
             src={booksImg}
             alt="Vutuka Edition Library"
-            className="rounded-2xl shadow-lg w-full object-cover"
+            className="rounded-2xl shadow-lg w-full lg:h-[400px] 2xl:h-full object-cover"
           />
           <img
             src={readerImg}
@@ -20,43 +23,25 @@ const About: React.FC = () => {
           />
         </div>
 
-        <div className="">
+        <div className="flex-1">
           <h2 className="text-4xl font-bold text-gray-800 mb-6">
-            About <span className="text-main-hover">Vutuka Edition</span>
+            {t('About-title')} <span className="text-main-hover">Vutuka Edition</span>
           </h2>
-          <p className="text-md lg:text-lg text-gray-600 leading-relaxed mb-2">
-            We are a modern publishing house and digital library, dedicated to connecting people
-            with stories that inspire, educate, and preserve cultural heritage. Our mission is to
-            make literature accessible to all, whether through physical books or our expanding
-            online catalog.
+          <p className="text-sm md:text-md xl:text-lg text-gray-600 leading-relaxed mb-2 text-justify">
+            {t('About-description-one')}
           </p>
-          <p className="text-md lg:text-lg text-gray-600 leading-relaxed mb-8">
-            We work with diverse authors, educators, and readers to curate works that spark
-            imagination and build connections. From publishing services to community reading
-            programs, Vutuka Edition is more than a publisher as we are a bridge between creators
-            and audiences.
+          <p className="text-sm md:text-md xl:text-lg text-gray-600 leading-relaxed mb-8 text-justify">
+            {t('About-description-two')}
           </p>
 
           {/* Feature list */}
           <div className="grid sm:grid-cols-3 gap-6">
-            <div className="bg-white p-5 rounded-xl shadow hover:shadow-md transition">
-              <h3 className="text-xl font-semibold text-gray-800 mb-2">📚 Publishing</h3>
-              <p className="text-gray-600 text-sm">
-                Guiding manuscripts from concept to published masterpiece.
-              </p>
-            </div>
-            <div className="bg-white p-5 rounded-xl shadow hover:shadow-md transition">
-              <h3 className="text-xl font-semibold text-gray-800 mb-2">🌐 Digital Library</h3>
-              <p className="text-gray-600 text-sm">
-                Access books anytime, anywhere on our online platform.
-              </p>
-            </div>
-            <div className="bg-white p-5 rounded-xl shadow hover:shadow-md transition">
-              <h3 className="text-xl font-semibold text-gray-800 mb-2">🤝 Community</h3>
-              <p className="text-gray-600 text-sm">
-                Book clubs, reading drives, and literacy outreach programs.
-              </p>
-            </div>
+            {aboutItems.map((item, index) => (
+              <div key={index} className="bg-white p-5 rounded-xl shadow hover:shadow-md transition">
+                <h3 className="text:lg xl:text-2xl font-semibold text-gray-800 mb-2">{item.icon} {t(item.title)}</h3>
+                <p className="text-gray-600 text-sm">{t(item.description)}</p>
+              </div>
+            ))}
           </div>
         </div>
       </div>

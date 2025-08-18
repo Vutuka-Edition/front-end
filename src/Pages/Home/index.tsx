@@ -16,7 +16,7 @@ import herobg from '../../assets/images/Hero-bg.png';
 const Home: FC = () => {
   return (
     <main className="relative bg-white-extended">
-      <div id="home" className="h-[70vh] lg:h-[85vh] flex items-center justify-between">
+      <div className="h-[70vh] lg:h-[85vh] flex items-center justify-between">
         <Hero />
         <div className="hidden lg:block flex-1 relative h-full">
           <img src={herobg} alt="hero-bg" className="h-full object-cover" />
