@@ -1,81 +1,80 @@
-import { useEffect, useCallback, useState } from 'react'
-import { handleLogout } from '../Utils/logoutHandler'
-import { apiRequest } from '../Redux/apiCalls'
-import authService from '../Services/authServices'
+import { useEffect, useCallback, useState } from 'react';
+import { handleLogout } from '../Utils/logoutHandler';
+import { apiRequest } from '../Redux/apiCalls';
+import authService from '../Services/authServices';
 
 function useTokenExpiryWarning() {
-  const [showWarningModal, setShowWarningModal] = useState(false)
-  const [isRefreshing, setIsRefreshing] = useState<boolean>(false)
-  const refreshToken = authService.getRefreshToken()
-  const token = authService.getToken()
-  const isTokenExpired = authService.isTokenExpired
-  const isTokenAboutExpired = authService.isTokenAboutExpired
+  const [showWarningModal, setShowWarningModal] = useState(false);
+  const [isRefreshing, setIsRefreshing] = useState<boolean>(false);
+  const refreshToken = authService.getRefreshToken();
+  const token = authService.getToken();
+  const isTokenExpired = authService.isTokenExpired;
+  const isTokenAboutExpired = authService.isTokenAboutExpired;
 
   const handleRefreshToken = async () => {
-    setIsRefreshing(true)
+    setIsRefreshing(true);
     try {
-      const response = await apiRequest.post('/login/refresh/token', { refreshToken })
+      const response = await apiRequest.post('/login/refresh/token', { refreshToken });
       if (response.status === 200) {
-        authService.setToken(JSON.stringify(response.data.accessToken))
-        handleModalClose()
+        authService.setToken(JSON.stringify(response.data.accessToken));
+        handleModalClose();
       }
-      setIsRefreshing(false)
+      setIsRefreshing(false);
     } catch (error) {
       console.error('Error refreshing token:', error);
-      setIsRefreshing(false)
-      handleModalClose()
+      setIsRefreshing(false);
+      handleModalClose();
       handleLogout();
     }
   };
 
   const handleActivity = useCallback(() => {
     if (!token) {
-      return
+      return;
     }
 
     if (isTokenExpired()) {
-      handleLogout()
+      handleLogout();
     } else if (isTokenAboutExpired()) {
-      setShowWarningModal(true)
+      setShowWarningModal(true);
     }
-
-  }, [token, isTokenExpired, isTokenAboutExpired])
+  }, [token, isTokenExpired, isTokenAboutExpired]);
 
   useEffect(() => {
-    const events = ['click', 'keydown', 'scroll']
+    const events = ['click', 'keydown', 'scroll'];
 
     events.forEach((event) => {
-      window.addEventListener(event, handleActivity)
-    })
+      window.addEventListener(event, handleActivity);
+    });
 
     return () => {
       events.forEach((event) => {
-        window.removeEventListener(event, handleActivity)
-      })
-    }
-  }, [handleActivity])
+        window.removeEventListener(event, handleActivity);
+      });
+    };
+  }, [handleActivity]);
 
   const handleModalConfirm = () => {
-    setShowWarningModal(false)
-    handleRefreshToken()
-  }
+    setShowWarningModal(false);
+    handleRefreshToken();
+  };
 
   const handleModalCancel = () => {
-    setShowWarningModal(false)
-    handleLogout()
-  }
+    setShowWarningModal(false);
+    handleLogout();
+  };
 
   const handleModalClose = () => {
-    setShowWarningModal(false)
-  }
+    setShowWarningModal(false);
+  };
 
   return {
     isRefreshing,
     showWarningModal,
     handleModalConfirm,
     handleModalCancel,
-    handleModalClose
-  }
+    handleModalClose,
+  };
 }
 
-export default useTokenExpiryWarning
+export default useTokenExpiryWarning;

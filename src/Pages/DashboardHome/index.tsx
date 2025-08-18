@@ -1,9 +1,7 @@
-import React from 'react'
+import React from 'react';
 
 const DashboardHome: React.FC = () => {
-  return (
-    <div>Dashboard Home</div>
-  )
-}
+  return <div>Dashboard Home</div>;
+};
 
-export default DashboardHome
+export default DashboardHome;

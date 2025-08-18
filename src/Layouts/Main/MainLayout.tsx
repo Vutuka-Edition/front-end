@@ -1,26 +1,26 @@
-import React, { useEffect, useState } from 'react'
-import { Outlet } from 'react-router-dom'
+import React, { useEffect, useState } from 'react';
+import { Outlet } from 'react-router-dom';
 
-import Navbar from '../../Components/NavBar'
-import Footer from '../../Components/Footer'
+import Navbar from '../../Components/NavBar';
+import Footer from '../../Components/Footer';
 
 const MainLayout: React.FC = () => {
-  const [scroll, setScroll] = useState<boolean>(false)
+  const [scroll, setScroll] = useState<boolean>(false);
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 50) {
-        setScroll(true)
+      if (window.scrollY > 10) {
+        setScroll(true);
       } else {
-        setScroll(false)
+        setScroll(false);
       }
-    }
+    };
 
-    window.addEventListener('scroll', handleScroll)
+    window.addEventListener('scroll', handleScroll);
     return () => {
-      window.removeEventListener('scroll', handleScroll)
-    }
-  }, [])
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
   return (
     <>
@@ -30,7 +30,7 @@ const MainLayout: React.FC = () => {
       </main>
       <Footer />
     </>
-  )
-}
+  );
+};
 
-export default MainLayout
+export default MainLayout;

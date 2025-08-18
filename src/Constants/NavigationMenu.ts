@@ -1,6 +1,6 @@
-import type { ProfileMenu } from '../Types/generalTypes'
+import type { ProfileMenu } from '../Types/generalTypes';
 
-import manageAccountIcon from '../assets/icons/user.svg'
+import manageAccountIcon from '../assets/icons/user.svg';
 
 export const profileMenu: ProfileMenu[] = [
   {
@@ -9,27 +9,27 @@ export const profileMenu: ProfileMenu[] = [
     link: '/dashboard/manage-account',
     icon: manageAccountIcon,
   },
-]
+];
 
 export const navigationItems = [
-    {
-        id: 1,
-        title: 'About',
-        link: '#about',
-    },
-    {
-        id: 2,
-        title: 'Books',
-        link: '#books',
-    },
-    {
-        id: 3,
-        title: 'How it works',
-        link: '#how-it-works',
-    },
-    {
-        id: 4,
-        title: 'Contact',
-        link: '#contact',
-    },
-]
+  {
+    id: 1,
+    title: 'About',
+    link: '#about',
+  },
+  {
+    id: 2,
+    title: 'Books',
+    link: '#books',
+  },
+  {
+    id: 3,
+    title: 'How it works',
+    link: '#how-it-works',
+  },
+  {
+    id: 4,
+    title: 'Contact',
+    link: '#contact',
+  },
+];

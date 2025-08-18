@@ -1,5 +1,5 @@
-import React from "react";
-import { partners } from "../../Constants/partners";
+import React from 'react';
+import { partners } from '../../Constants/partners';
 
 const Partners: React.FC = () => {
   return (
