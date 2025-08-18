@@ -1,19 +1,21 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 
 import type { Process } from '../Constants/HowItWorksItems';
 
 const ProcessCard: React.FC<{ item: Process }> = ({ item }) => {
+  const { t } = useTranslation();
   return (
-    <div className="group h-[250px] sm:h-[300px] md:h-[300px] flex flex-col justify-between p-4 sm:p-6 rounded-2xl sm:rounded-4xl border-2 border-main-hover bg-gradient-to-br from-white via-gray-50 to-white hover:bg-gradient-to-br hover:from-white hover:via-green-new-hover hover:to-white hover:border-green-new-hover transition-all duration-500 shadow-soft hover:shadow-medium">
+    <div className="group h-[250px] md:h-[300px] lg:h-[250px] 2xl:h-[320px] flex flex-col justify-between p-4 sm:p-6 rounded-2xl sm:rounded-4xl border-2 border-main-hover bg-gradient-to-br from-white via-gray-50 to-white hover:bg-gradient-to-br hover:from-white hover:via-green-new-hover hover:to-white hover:border-green-new-hover transition-all duration-500 shadow-soft hover:shadow-medium">
       <div className="flex flex-col items-start">
         <div className="w-10 h-10 sm:w-12 sm:h-12 p-2 flex items-center justify-center rounded-full bg-gradient-to-br from-green-new-hover to-green-new transition-all duration-500 shadow-sm">
           <item.icon className="w-4 h-4 sm:w-5 sm:h-5 text-black group-hover:text-accent-700 transition-colors duration-300" />
         </div>
-        <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl heading-3 mt-3 sm:mt-4 text-neutral-900 group-hover:text-black transition-colors duration-300">
-          {item.title}
+        <h3 className="text-lg sm:text-xl heading-3 mt-3 sm:mt-4 text-neutral-900 group-hover:text-black transition-colors duration-300">
+          {t(item.title)}
         </h3>
         <p className="text-start text-gray-500 group-hover:text-gray-700 text-xs sm:text-sm mt-2 leading-relaxed">
-          {item.description}
+          {t(item.description)}
         </p>
       </div>
       <div className="flex items-center justify-between mt-3 sm:mt-4 w-full">
@@ -33,13 +35,13 @@ const ProcessCard: React.FC<{ item: Process }> = ({ item }) => {
           <div className="flex items-center gap-1 sm:gap-2 text-xs sm:text-sm text-gray-500 group-hover:text-gray-700 transition-colors duration-300 font-myriad">
             {item.tagline.map((line: string, index: number) => (
               <span key={index} className="font-medium">
-                #{line}
+                #{t(line)}
               </span>
             ))}
           </div>
         )}
         <p className="text-xs sm:text-sm text-gray-500 group-hover:text-gray-700 transition-colors duration-300 font-myriad">
-          {item.text}
+          {t(item.text ?? '')}
         </p>
       </div>
     </div>

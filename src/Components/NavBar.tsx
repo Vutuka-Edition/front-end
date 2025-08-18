@@ -127,7 +127,7 @@ const NavBar: FC<NavBarProps> = ({ isScrolled }) => {
             <Link to="/login">
               <button
                 data-testid="login-button"
-                className="hidden lg:inline bg-green-new hover:bg-white hover:text-main text-white p-2 md:px-6 md:py-2 rounded-lg font-[700] "
+                className="hidden lg:inline bg-green-new hover:bg-green-200 hover:text-main text-white p-2 md:px-6 md:py-2 rounded-lg font-[700] "
               >
                 {t('login')}
               </button>

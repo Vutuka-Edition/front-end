@@ -4,20 +4,20 @@ import type { Review } from '../Constants/Testimonials';
 
 const ReviewCard: React.FC<{ review: Review }> = ({ review }) => {
   return (
-    <div className="p-6 rounded-xl transition flex flex-col">
+    <div className="rounded-xl transition flex flex-col">
       <div className="flex items-center mb-4">
         <img
           src={review.avatar}
           alt={review.name}
-          className="w-32 h-32 border-4 border-gray-300 rounded-full object-cover mr-4"
+          className="w-24 md:w-32 h-24 md:h-32 border-4 border-gray-300 rounded-full object-cover mr-4"
         />
         <div>
-          <h3 className="text-2xl font-semibold text-gray-800">{review.name}</h3>
+          <h3 className="text-lg md:text-2xl font-semibold text-gray-800">{review.name}</h3>
           <div className="flex mt-1">
             {Array.from({ length: 5 }, (_, i) => (
               <svg
                 key={i}
-                className={`w-4 h-4 ${i < review.rating ? 'text-green-700' : 'text-gray-300'}`}
+                className={`w-3 md:w-4 h-3 md:h-4 ${i < review.rating ? 'text-green-700' : 'text-gray-300'}`}
                 fill="currentColor"
                 viewBox="0 0 20 20"
               >
@@ -25,8 +25,8 @@ const ReviewCard: React.FC<{ review: Review }> = ({ review }) => {
               </svg>
             ))}
           </div>
-          <p className="text-gray-600 text-lg flex-grow">{review.comment}</p>
-          <p className="text-green-400 text-sm mt-2">{review.date}</p>
+          <p className="text-gray-600 text-sm md:text-lg flex-grow text-justify">{review.comment}</p>
+          <p className="text-green-400 text-xs md:text-sm mt-2">{review.date}</p>
         </div>
       </div>
     </div>

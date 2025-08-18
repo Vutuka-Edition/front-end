@@ -20,10 +20,10 @@ const HowItWorks: FC = () => {
         <img
           src={vectorImg}
           alt="Background"
-          className="absolute w-full h-full object-contain rotate-90 md:rotate-0 top-0 left-0 right-0 z-0"
+          className="hidden lg:absolute w-full h-full object-contain rotate-90 md:rotate-0 top-0 left-0 right-0 z-0"
         />
         <div className="w-full h-full relative z-10 text-white text-center text-2xl font-semibold flex flex-col gap-12 md:flex-row items-center justify-between">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-4 gap-6 sm:gap-8">
             {processes.map((item) => (
               <ProcessCard key={item.id} item={item} />
             ))}
