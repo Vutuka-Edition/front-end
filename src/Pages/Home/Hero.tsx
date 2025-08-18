@@ -1,17 +1,15 @@
-import type { FC } from 'react'
-import { Link } from 'react-router-dom'
-import { useTranslation } from 'react-i18next'
+import type { FC } from 'react';
+import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
 const Hero: FC = () => {
-  const { t } = useTranslation()
+  const { t } = useTranslation();
   return (
     <div className="flex-1 h-full flex items-center justify-start">
       <div className="w-full flex flex-col items-center md:items-start justify-center gap-8 px-4 md:px-20">
         <div className="flex flex-col gap-8 w-full items-center md:items-start">
           <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold">{t('welcome')}</h1>
-          <p className="text-gray-500 text-sm md:text-lg">
-            {t('welcome-description')}
-          </p>
+          <p className="text-gray-500 text-sm md:text-lg">{t('welcome-description')}</p>
         </div>
         <div className="flex flex-col md:flex-row gap-4 w-full items-center justify-center md:justify-start">
           <Link
@@ -29,7 +27,7 @@ const Hero: FC = () => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Hero
+export default Hero;

@@ -1,7 +1,7 @@
-import React from "react";
+import React from 'react';
 
-import booksImg from '../../assets/images/books.jpg'
-import readerImg from '../../assets/images/reader.jpg'
+import booksImg from '../../assets/images/books.jpg';
+import readerImg from '../../assets/images/reader.jpg';
 
 const About: React.FC = () => {
   return (
@@ -25,41 +25,34 @@ const About: React.FC = () => {
             About <span className="text-main-hover">Vutuka Edition</span>
           </h2>
           <p className="text-md lg:text-lg text-gray-600 leading-relaxed mb-2">
-            We are a modern publishing house and
-            digital library, dedicated to connecting people with stories that
-            inspire, educate, and preserve cultural heritage. Our mission is to
-            make literature accessible to all, whether through physical books or
-            our expanding online catalog.
+            We are a modern publishing house and digital library, dedicated to connecting people
+            with stories that inspire, educate, and preserve cultural heritage. Our mission is to
+            make literature accessible to all, whether through physical books or our expanding
+            online catalog.
           </p>
           <p className="text-md lg:text-lg text-gray-600 leading-relaxed mb-8">
-            We work with diverse authors, educators, and readers to curate works
-            that spark imagination and build connections. From publishing
-            services to community reading programs, Vutuka Edition is more than
-            a publisher as we are a bridge between creators and audiences.
+            We work with diverse authors, educators, and readers to curate works that spark
+            imagination and build connections. From publishing services to community reading
+            programs, Vutuka Edition is more than a publisher as we are a bridge between creators
+            and audiences.
           </p>
 
           {/* Feature list */}
           <div className="grid sm:grid-cols-3 gap-6">
             <div className="bg-white p-5 rounded-xl shadow hover:shadow-md transition">
-              <h3 className="text-xl font-semibold text-gray-800 mb-2">
-                📚 Publishing
-              </h3>
+              <h3 className="text-xl font-semibold text-gray-800 mb-2">📚 Publishing</h3>
               <p className="text-gray-600 text-sm">
                 Guiding manuscripts from concept to published masterpiece.
               </p>
             </div>
             <div className="bg-white p-5 rounded-xl shadow hover:shadow-md transition">
-              <h3 className="text-xl font-semibold text-gray-800 mb-2">
-                🌐 Digital Library
-              </h3>
+              <h3 className="text-xl font-semibold text-gray-800 mb-2">🌐 Digital Library</h3>
               <p className="text-gray-600 text-sm">
                 Access books anytime, anywhere on our online platform.
               </p>
             </div>
             <div className="bg-white p-5 rounded-xl shadow hover:shadow-md transition">
-              <h3 className="text-xl font-semibold text-gray-800 mb-2">
-                🤝 Community
-              </h3>
+              <h3 className="text-xl font-semibold text-gray-800 mb-2">🤝 Community</h3>
               <p className="text-gray-600 text-sm">
                 Book clubs, reading drives, and literacy outreach programs.
               </p>

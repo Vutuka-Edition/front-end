@@ -1,12 +1,11 @@
-import React from 'react'
-import { Phone, Mail, MapPin, Facebook, Twitter, Instagram, Linkedin, Youtube } from "lucide-react";
+import React from 'react';
+import { Phone, Mail, MapPin, Facebook, Twitter, Instagram, Linkedin, Youtube } from 'lucide-react';
 
 const Footer: React.FC = () => {
   return (
-    <footer className='bg-main text-white'>
+    <footer className="bg-main text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 py-8 sm:py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          
           {/* Contact Information */}
           <div className="space-y-4">
             <h3 className="text-lg font-semibold mb-4">Contactez-nous</h3>
@@ -35,32 +34,50 @@ const Footer: React.FC = () => {
             <h3 className="text-lg font-semibold mb-4">Liens rapides</h3>
             <ul className="space-y-2">
               <li>
-                <a href="#" className="text-sm text-gray-300 hover:text-white transition-colors cursor-not-allowed opacity-50">
+                <a
+                  href="#"
+                  className="text-sm text-gray-300 hover:text-white transition-colors cursor-not-allowed opacity-50"
+                >
                   À propos de nous
                 </a>
               </li>
               <li>
-                <a href="#" className="text-sm text-gray-300 hover:text-white transition-colors cursor-not-allowed opacity-50">
+                <a
+                  href="#"
+                  className="text-sm text-gray-300 hover:text-white transition-colors cursor-not-allowed opacity-50"
+                >
                   Nos programmes
                 </a>
               </li>
               <li>
-                <a href="#" className="text-sm text-gray-300 hover:text-white transition-colors cursor-not-allowed opacity-50">
+                <a
+                  href="#"
+                  className="text-sm text-gray-300 hover:text-white transition-colors cursor-not-allowed opacity-50"
+                >
                   Faire un don
                 </a>
               </li>
               <li>
-                <a href="#" className="text-sm text-gray-300 hover:text-white transition-colors cursor-not-allowed opacity-50">
+                <a
+                  href="#"
+                  className="text-sm text-gray-300 hover:text-white transition-colors cursor-not-allowed opacity-50"
+                >
                   Devenir bénévole
                 </a>
               </li>
               <li>
-                <a href="#" className="text-sm text-gray-300 hover:text-white transition-colors cursor-not-allowed opacity-50">
+                <a
+                  href="#"
+                  className="text-sm text-gray-300 hover:text-white transition-colors cursor-not-allowed opacity-50"
+                >
                   Actualités
                 </a>
               </li>
               <li>
-                <a href="#" className="text-sm text-gray-300 hover:text-white transition-colors cursor-not-allowed opacity-50">
+                <a
+                  href="#"
+                  className="text-sm text-gray-300 hover:text-white transition-colors cursor-not-allowed opacity-50"
+                >
                   Contact
                 </a>
               </li>
@@ -72,32 +89,50 @@ const Footer: React.FC = () => {
             <h3 className="text-lg font-semibold mb-4">Nos programmes</h3>
             <ul className="space-y-2">
               <li>
-                <a href="#" className="text-sm text-gray-300 hover:text-white transition-colors cursor-not-allowed opacity-50">
+                <a
+                  href="#"
+                  className="text-sm text-gray-300 hover:text-white transition-colors cursor-not-allowed opacity-50"
+                >
                   Soutien éducatif
                 </a>
               </li>
               <li>
-                <a href="#" className="text-sm text-gray-300 hover:text-white transition-colors cursor-not-allowed opacity-50">
+                <a
+                  href="#"
+                  className="text-sm text-gray-300 hover:text-white transition-colors cursor-not-allowed opacity-50"
+                >
                   Aide alimentaire
                 </a>
               </li>
               <li>
-                <a href="#" className="text-sm text-gray-300 hover:text-white transition-colors cursor-not-allowed opacity-50">
+                <a
+                  href="#"
+                  className="text-sm text-gray-300 hover:text-white transition-colors cursor-not-allowed opacity-50"
+                >
                   Soutien psychologique
                 </a>
               </li>
               <li>
-                <a href="#" className="text-sm text-gray-300 hover:text-white transition-colors cursor-not-allowed opacity-50">
+                <a
+                  href="#"
+                  className="text-sm text-gray-300 hover:text-white transition-colors cursor-not-allowed opacity-50"
+                >
                   Activités récréatives
                 </a>
               </li>
               <li>
-                <a href="#" className="text-sm text-gray-300 hover:text-white transition-colors cursor-not-allowed opacity-50">
+                <a
+                  href="#"
+                  className="text-sm text-gray-300 hover:text-white transition-colors cursor-not-allowed opacity-50"
+                >
                   Formation professionnelle
                 </a>
               </li>
               <li>
-                <a href="#" className="text-sm text-gray-300 hover:text-white transition-colors cursor-not-allowed opacity-50">
+                <a
+                  href="#"
+                  className="text-sm text-gray-300 hover:text-white transition-colors cursor-not-allowed opacity-50"
+                >
                   Soutien aux familles
                 </a>
               </li>
@@ -107,7 +142,7 @@ const Footer: React.FC = () => {
           {/* Newsletter & Social */}
           <div className="space-y-4">
             <h3 className="text-lg font-semibold mb-4">Restez connectés</h3>
-            
+
             {/* Newsletter Signup */}
             <div className="space-y-3">
               <p className="text-sm text-gray-300">Inscrivez-vous à notre newsletter</p>
@@ -128,19 +163,34 @@ const Footer: React.FC = () => {
             <div className="space-y-3">
               <p className="text-sm text-gray-300">Suivez-nous</p>
               <div className="flex space-x-3">
-                <a href="#" className="w-8 h-8 rounded-full flex items-center justify-center hover:bg-main-hover transition-colors cursor-not-allowed opacity-50">
+                <a
+                  href="#"
+                  className="w-8 h-8 rounded-full flex items-center justify-center hover:bg-main-hover transition-colors cursor-not-allowed opacity-50"
+                >
                   <Facebook className="w-4 h-4" />
                 </a>
-                <a href="#" className="w-8 h-8 rounded-full flex items-center justify-center hover:bg-main-hover transition-colors cursor-not-allowed opacity-50">
+                <a
+                  href="#"
+                  className="w-8 h-8 rounded-full flex items-center justify-center hover:bg-main-hover transition-colors cursor-not-allowed opacity-50"
+                >
                   <Twitter className="w-4 h-4" />
                 </a>
-                <a href="#" className="w-8 h-8 rounded-full flex items-center justify-center hover:bg-main-hover transition-colors cursor-not-allowed opacity-50">
+                <a
+                  href="#"
+                  className="w-8 h-8 rounded-full flex items-center justify-center hover:bg-main-hover transition-colors cursor-not-allowed opacity-50"
+                >
                   <Instagram className="w-4 h-4" />
                 </a>
-                <a href="#" className="w-8 h-8 rounded-full flex items-center justify-center hover:bg-main-hover transition-colors cursor-not-allowed opacity-50">
+                <a
+                  href="#"
+                  className="w-8 h-8 rounded-full flex items-center justify-center hover:bg-main-hover transition-colors cursor-not-allowed opacity-50"
+                >
                   <Linkedin className="w-4 h-4" />
                 </a>
-                <a href="#" className="w-8 h-8 rounded-full flex items-center justify-center hover:bg-main-hover transition-colors cursor-not-allowed opacity-50">
+                <a
+                  href="#"
+                  className="w-8 h-8 rounded-full flex items-center justify-center hover:bg-main-hover transition-colors cursor-not-allowed opacity-50"
+                >
                   <Youtube className="w-4 h-4" />
                 </a>
               </div>
@@ -157,10 +207,16 @@ const Footer: React.FC = () => {
               <p>&copy; {new Date().getFullYear()} Vutuka Edition. Tous droits réservés.</p>
             </div>
             <div className="flex space-x-6 text-sm">
-              <a href="#" className="text-gray-300 hover:text-white transition-colors cursor-not-allowed opacity-50">
+              <a
+                href="#"
+                className="text-gray-300 hover:text-white transition-colors cursor-not-allowed opacity-50"
+              >
                 Politique de confidentialité
               </a>
-              <a href="#" className="text-gray-300 hover:text-white transition-colors cursor-not-allowed opacity-50">
+              <a
+                href="#"
+                className="text-gray-300 hover:text-white transition-colors cursor-not-allowed opacity-50"
+              >
                 Conditions d&apos;utilisation
               </a>
             </div>
@@ -168,7 +224,7 @@ const Footer: React.FC = () => {
         </div>
       </div>
     </footer>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;

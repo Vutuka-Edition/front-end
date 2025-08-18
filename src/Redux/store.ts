@@ -1,5 +1,5 @@
-import { configureStore, combineReducers } from '@reduxjs/toolkit'
-import storage from 'redux-persist/lib/storage'
+import { configureStore, combineReducers } from '@reduxjs/toolkit';
+import storage from 'redux-persist/lib/storage';
 import {
   persistStore,
   persistReducer,
@@ -9,22 +9,22 @@ import {
   PERSIST,
   PURGE,
   REGISTER,
-} from 'redux-persist'
+} from 'redux-persist';
 
-import currentUserRedux from './currentUserRedux'
+import currentUserRedux from './currentUserRedux';
 
 const persistConfig = {
   key: 'root',
   version: 1,
   storage,
-  whitelist: ['currentUser']
-}
+  whitelist: ['currentUser'],
+};
 
 const rootReducer = combineReducers({
   currentUser: currentUserRedux,
-})
+});
 
-const persistedReducer = persistReducer(persistConfig, rootReducer)
+const persistedReducer = persistReducer(persistConfig, rootReducer);
 
 export const store = configureStore({
   reducer: persistedReducer,
@@ -32,9 +32,9 @@ export const store = configureStore({
     getDefaultMiddleware({
       serializableCheck: {
         ignoredActions: [FLUSH, REHYDRATE, PAUSE, PERSIST, PURGE, REGISTER],
-      }
-    })
-})
+      },
+    }),
+});
 
-export const persistor = persistStore(store)
+export const persistor = persistStore(store);
 export type AppDispatch = typeof store.dispatch;
